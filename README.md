@@ -13,7 +13,7 @@ FGSM perturbs the input data in the direction of the gradient of the loss functi
 
 ## Mathematical Equation
 Moreover, we try to maximize the loss wrt image pixels.
-![Equation](https://github.com/pankajydv07/FGSM-Adversarial-Attack/blob/main/FGSM-Equation.png)
+![Equation](FGSM-Equation.png)
 ## FGSM Tensorflow Implementation
 ```
 import tensorflow as tf
@@ -30,9 +30,8 @@ def fgsm_attack(model, x, y, epsilon):
     return x_adv
 ```
 ## Paper
-[Explaining and Harnessing Adversarial Examples](https://github.com/pankajydv07/FGSM-Adversarial-Attack/blob/main/1412.6572v3.pdf) by Ian J. Goodfellow, Jonathon Shlens, and Christian Szegedy.
+[Explaining and Harnessing Adversarial Examples](1412.6572v3.pdf) by Ian J. Goodfellow, Jonathon Shlens, and Christian Szegedy.
 
-> **Check out [this](https://github.com/pankajydv07/Adversarial-Attack-Defence) repo, where I used Denoising AutoEncoder + Block Switch model to defend against an FGSM adversarial attack on CIFAR10. To an extent DAE+BS was able to defend and gave more correct predictions.**
 > 
 # FGSM Adversarial Attack & Defense
 
